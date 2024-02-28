@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto auto;
@@ -26,12 +36,14 @@ a {
   color: #F9FAF8;
 }
 
-.header a {
+.header a,
+.hero-left p {
   font-size: 18px;
   color: #E5E7EB;
 }
 
-.header-content {
+.header-content,
+.hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,4 +57,50 @@ a {
   list-style: none;
   display: flex;
   gap: 32px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;  
+  height: 500px;
+}
+
+.hero-image {
+  background-color: #677379;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #E5E7EB;
+  height: 320px;
+  width: 640px;
+  flex-shrink: 0;
+}
+
+.hero-left {
+  padding: 16px;
+  margin-right: 16px;
+  height: 320px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+  margin: 0 0 16px;
+}
+
+.hero-left p {
+  margin: 0 0 16px;
+}
+
+.hero-left button {
+  background-color: #3882F6;
+  box-shadow: none;
+  border: none;
+  padding: 12px 36px;
+  font-size: 18px;
+  color: #E5E7EB;
+  font-weight: bold;
+  border-radius: 8px;
 }
