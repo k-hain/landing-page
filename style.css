@@ -24,6 +24,10 @@ a {
   background-color: #1F2937;
 }
 
+.background-gray {
+  background-color: #E5E7EB;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -36,7 +40,8 @@ a {
   height: 480px;
 }
 
-.information {
+.information,
+.quote {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -53,6 +58,11 @@ a {
   margin: 0 16px;
 }
 
+.quote-content {
+  width: 1280px;
+  padding: 0 192px;
+}
+
 .information-content {
   flex-direction: column;
 }
@@ -64,8 +74,7 @@ a {
 }
 
 .hero-left {
-  padding: 16px;
-  margin-right: 16px;
+  padding: 0 32px 0 0;
   height: 320px;
 }
 
@@ -106,7 +115,7 @@ a {
 }
 
 .hero-image {
-  background-color: #677379;
+  background-color: #707a86;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,4 +156,19 @@ a {
   display: flex;
   justify-content: space-around;
   gap: 64px;
+}
+
+.quote-text {
+  margin: 8px 0;
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.quote-author {
+  margin: 0;
+  text-align: end;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1F2937;
 }
