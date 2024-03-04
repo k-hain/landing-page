@@ -30,25 +30,43 @@ a {
   height: 60px;
 }
 
+.hero {
+  display: flex;
+  justify-content: space-around;  
+  height: 480px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 480px;
+}
+
+.header-content,
+.hero-content,
+.information-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  margin: 0 16px;
+}
+
+.information-content {
+  flex-direction: column;
+}
+
 .header-logo {
   font-size: 24px;
   font-weight: bold;
   color: #F9FAF8;
 }
 
-.header a,
-.hero-left p {
-  font-size: 18px;
-  color: #E5E7EB;
-}
-
-.header-content,
-.hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1280px;
-  margin: 0 16px;
+.hero-left {
+  padding: 16px;
+  margin-right: 16px;
+  height: 320px;
 }
 
 .header-content ul {
@@ -59,28 +77,10 @@ a {
   gap: 32px;
 }
 
-.hero {
-  display: flex;
-  justify-content: space-around;  
-  height: 500px;
-}
-
-.hero-image {
-  background-color: #677379;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
+.header a,
+.hero-left p {
+  font-size: 18px;
   color: #E5E7EB;
-  height: 320px;
-  width: 640px;
-  flex-shrink: 0;
-}
-
-.hero-left {
-  padding: 16px;
-  margin-right: 16px;
-  height: 320px;
 }
 
 .hero-left h1 {
@@ -103,4 +103,48 @@ a {
   color: #E5E7EB;
   font-weight: bold;
   border-radius: 8px;
+}
+
+.hero-image {
+  background-color: #677379;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #E5E7EB;
+  height: 320px;
+  width: 640px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.information-content h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+  margin: 0 0 32px;
+}
+
+.illustration-subsection {
+  width: 160px;
+}
+
+.illustration-subsection p {
+  text-align: center;
+  font-size: 18px;
+  color: #475568;
+  margin: 8px 0 0;
+}
+
+.illustration {
+  border: 4px solid #3882F6;
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+}
+
+.illustrations {
+  display: flex;
+  justify-content: space-around;
+  gap: 64px;
 }
