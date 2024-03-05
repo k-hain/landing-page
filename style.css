@@ -34,6 +34,12 @@ a {
   height: 60px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+
 .hero {
   display: flex;
   justify-content: space-around;  
@@ -74,6 +80,14 @@ a {
 
 .quote-content {
   width: 1024px;
+  padding: 0 16px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
   padding: 0 16px;
 }
 
@@ -122,7 +136,8 @@ a {
 
 .header a,
 .hero-left p,
-.cta-left p {
+.cta-left p,
+.footer-content p {
   font-size: 18px;
   color: #E5E7EB;
   margin: 0;
